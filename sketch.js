@@ -44,7 +44,7 @@ function setup() {
   ground = createSprite(200,180,400,20);
   ground.addImage("ground",groundImage);
   ground.x = ground.width /2;
-  ground.velocityX = -4;
+  ground.velocityX = -8;
   
   invisibleGround = createSprite(200,190,400,10);
   invisibleGround.visible = false;
@@ -143,7 +143,7 @@ function spawnClouds() {
 function spawnObstacles() {
   if(frameCount % 60 === 0) {
     var obstacle = createSprite(600,165,10,40);
-    obstacle.velocityX = -6;
+    obstacle.velocityX = -8;
     
     //generate random obstacles
     var rand = Math.round(random(1,6));
@@ -165,7 +165,7 @@ function spawnObstacles() {
     
     //assign scale and lifetime to the obstacle           
     obstacle.scale = 0.5;
-    obstacle.lifetime = 100;
+    obstacle.lifetime = 75;
     
     trex.depth = obstacle.depth + 1;
     
@@ -180,7 +180,7 @@ function reset() {
   score = 0;
   
   ground.x = ground.width /2;
-  ground.velocityX = -4;
+  ground.velocityX = -8;
   
   gameOver.visible = false;
   restart.visible = false;
