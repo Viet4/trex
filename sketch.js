@@ -143,7 +143,7 @@ function spawnClouds() {
 function spawnObstacles() {
   if(frameCount % 60 === 0) {
     var obstacle = createSprite(600,165,10,40);
-    obstacle.velocityX = -4;
+    obstacle.velocityX = -5;
     
     //generate random obstacles
     var rand = Math.round(random(1,6));
@@ -165,7 +165,7 @@ function spawnObstacles() {
     
     //assign scale and lifetime to the obstacle           
     obstacle.scale = 0.5;
-    obstacle.lifetime = 300;
+    obstacle.lifetime = 120;
     
     trex.depth = obstacle.depth + 1;
     
