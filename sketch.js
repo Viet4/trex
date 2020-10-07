@@ -44,7 +44,7 @@ function setup() {
   ground = createSprite(200,180,400,20);
   ground.addImage("ground",groundImage);
   ground.x = ground.width /2;
-  ground.velocityX = -12;
+  ground.velocityX = -8;
   
   invisibleGround = createSprite(200,190,400,10);
   invisibleGround.visible = false;
@@ -180,7 +180,7 @@ function reset() {
   score = 0;
   
   ground.x = ground.width /2;
-  ground.velocityX = -12;
+  ground.velocityX = -8;
   
   gameOver.visible = false;
   restart.visible = false;
